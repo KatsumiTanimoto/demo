@@ -5,46 +5,27 @@
     <title>企業情報サイト</title>
     <style>
         body {
-            background-color: blue;
+            background-color: #f0f8ff; /* 薄い青 */
             color: black;
             text-align: left;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
             padding: 20px;
         }
-        .image {
-            margin-right: 20px;
-        }
+
         img {
-            width: 200px;
+            width: 60%; /* 幅を60%に設定して見やすく */
             height: auto;
-        }
-        .text {
-            max-width: 800px;
+            display: block;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 左側の画像 -->
-        <div class="image">
-            <img src="/images/photo.jpg" alt="企業の写真">
-        </div>
-
-        <!-- 右側のテキスト -->
-        <div class="text">
+    <img src="photo.jpg" alt="企業の写真">
             <h1>昨日ゴルフに行きました</h1>
             <p>下手すぎてクラブが折れました．</p>
             <p>フルスイングしたときに背中がボキってなりました．</p>
             <p>痛すぎて病院行ったらギックリ背中でした．</p>
             <p>福ちゃんの適度に運動はするようにしましょう．</p>
-        </div>
-    </div>
 </body>
 </html>
