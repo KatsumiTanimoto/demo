@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>福ちゃんのページ</title>
-  <style>
-    body {
-      background-color: #fdfdfd;
-      color: #000;
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 10px;
-    }
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-    }
-    hr {
-      margin: 20px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>企業情報サイト</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffffcc;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 900px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #00796b;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-
-  <h1>福ちゃんのホームページ</h1>
-  <hr>
-
-  <img src="photo.jpg" alt="ゴルフの写真">
-
-  <p>昨日ゴルフに行きました。</p>
-  <p>下手すぎてクラブが折れました。</p>
-  <p>フルスイングしたときに背中がボキってなりました。</p>
-  <p>痛すぎて病院行ったらギックリ背中でした。</p>
-  <p>福ちゃんは適度に運動するようにしましょう。</p>
-
-  <hr>
-  <p>更新日：2025年5月7日</p>
-
+    <div class="container">
+        <h1>企業活動レポート</h1>
+        <img src="photo.jpg" alt="企業のイメージ画像">
+        <p>昨日ゴルフに行きました。</p>
+        <p>下手すぎてクラブが折れました。</p>
+        <img src="photo.jpg" alt="事故の記録写真" style="max-width: 300px;">
+        <p>フルスイングしたときに背中がボキってなりました。</p>
+        <p>痛すぎて病院行ったらギックリ背中でした。</p>
+        <p>福ちゃんは適度に運動するようにしましょう。</p>
+        <footer>
+            <hr>
+            <p>更新日：2025年5月7日</p>
+        </footer>
+    </div>
 </body>
 </html>
