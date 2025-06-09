@@ -1,130 +1,168 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>企業情報サイト</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Noto Sans JP', sans-serif;
-            background: linear-gradient(to right, #e0f7fa, #ffffff);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <title>週間報告</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #333;
+    }
 
-        .container {
-            background-color: #ffffffcc;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 900px;
-            padding: 30px;
-            text-align: center;
-        }
+    h1 {
+      text-align: center;
+      padding-top: 40px;
+      color: #00796b;
+    }
 
-        h1 {
-            font-size: 2em;
-            color: #00796b;
-        }
+    section {
+      padding: 40px 20px;
+    }
 
-        h2 {
-            font-size: 1.4em;
-            color: #00695c;
-            margin-top: 30px;
-        }
+    .section-blue {
+      background-color: #e0f7fa;
+    }
 
-        p {
-            line-height: 1.8;
-            margin: 10px 0;
-        }
+    .section-green {
+      background-color: #f1f8e9;
+    }
 
-        img {
-            width: 100%;
-            max-width: 500px;
-            border-radius: 8px;
-            margin: 20px auto;
-            display: block;
-        }
+    .section-yellow {
+      background-color: #fff8e1;
+    }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #777;
-        }
+    .row {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-        form {
-            text-align: left;
-            margin-top: 30px;
-        }
+    .text-block {
+      flex: 1;
+      min-width: 280px;
+    }
 
-        input[type="text"],
-        textarea {
-            width: 100%;
-            max-width: 600px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            font-size: 1em;
-        }
+    .image-block {
+      flex: 1;
+      min-width: 280px;
+    }
 
-        input[type="submit"] {
-            background-color: #00796b;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1em;
-            cursor: pointer;
-        }
+    .image-block img {
+      width: 100%;
+      border-radius: 8px;
+    }
 
-        input[type="submit"]:hover {
-            background-color: #004d40;
-        }
-    </style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #00796b;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>週刊日誌</h1>
-        
-        <h2>バンダバーグからゴールドコーストへ</h2>
-        <p>昨日までバンダバーグという田舎にいたのですが，日本人ばかりのホステルに入るか迷っていたうえに，仕事まで3週間待ってもらうと言われたので，思い切って町を出ることにしました．</p>
-        <p>新しい町はゴールドコーストという都会と自然が合わさったとても良い街です．昨日来たばかりで良い写真がまだないのですが，こんな感じです．</p>
-        <img src="Gold.jpg" alt="街並み" style="max-width: 300px;">
+  <h1>週刊日誌</h1>
 
-        <h2>この町の第一印象</h2>
-        <p>この町は観光客が多く治安が良いと思っていたのですが，難波に住んでいるような感じで案外治安が悪いです．</p>
-        <p>今日はシンナーを吸っておかしくなった女の子（高校生くらい）が滞在しているホテルに乗り込んできてもめていました．</p>
-        <p>しかし，ムキムキのヨーロッパ人が多く滞在しているので，その人たちが何とかしてくれました．</p>
-
-        <p>この町には，日本人が少なく英語の勉強に適しているので，治安は悪いですが，この町で仕事を探してみようかと思います．</p>
-        <p>引っ越したばかりで友達がいなくて寂しいとは特にないのですが，前のホステルにいた掃除のお姉さんとその子供に会えないのだけが心残りです．</p>
-        <img src="sky.jpg" alt="街並み" style="max-width: 300px;">
-
-        <p>下の入力フォームは無料版では難しいらしいのですが，やりかたはあるらしいので，これから改良していこうと思います．</p>
-        <p>P.S.福ちゃんは同期や先輩をいじめたりしていませんか？</p>
-
-        <h2>近況報告フォーム</h2>
-        <form action="/submit" method="post">
-            <label for="name">氏名：</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="message">メッセージ：</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-            <input type="submit" value="送信">
-        </form>
-
-        <footer>
-            <hr>
-            <p>更新日：2025年6月1日</p>
-        </footer>
+  <!-- セクション①：仕事 -->
+  <section class="section-blue">
+    <div class="row">
+      <div class="text-block">
+        <h2>仕事について</h2>
+        <p>せっかく都会に来たので，レストランで働こうか迷ったのですが，やはりファームで働くことにしました．</p>
+        <p>来週からファームで働くオンですが，今はシーズンではないので，週給8万円程度だそうです．</p>
+        <p>しかし，7月からは週給25万も目指せるので，プロイチゴピッカーになりたいと思います．</p>
+        <p>本気でお金を貯めたくなったらいつでも連絡してください</p>
+      </div>
+      <div class="image-block">
+        <img src="Emu.jpg" alt="Emu">
+      </div>
     </div>
+  </section>
+
+  <!-- セクション②：動物園 -->
+  <section class="section-green">
+    <div class="row">
+      <div class="text-block">
+        <h2>オーストラリアの動物園について</h2>
+        <p>昨日動物園に行ってきました．オーストラリアの動物園では多くの動物が放し飼いにされています．</p>
+        <p>特にエミューの放し飼いは怖かったです。足は恐竜みたいでしたが，普通に触れました。</p>
+      </div>
+      <div class="image-block">
+        <img src="Coara.jpg" alt="コアラ">
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="text-block">
+        <p>カンガルーも放し飼いでしたし，コアラはユーカリを食べていて、意外とよく動いていました。</p>
+        <p>また、大きな蛇もいて迫力がありました。</p>
+        <p>全体的に楽しめたので、日本に帰ったら他の動物園にも行ってみようと思いました。</p>
+      </div>
+      <div class="image-block">
+        <img src="Snake.jpg" alt="Snake">
+      </div>
+    </div>
+  </section>
+
+  <!-- セクション③：フォーム -->
+  <section class="section-yellow">
+    <h2 style="text-align:center;">近況報告フォーム</h2>
+    <form action="/submit" method="post">
+      <label for="name">氏名：</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="message">メッセージ：</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+
+      <input type="submit" value="送信">
+    </form>
+  </section>
+
+  <footer>
+    <hr>
+    <p>更新日：2025年6月9日</p>
+  </footer>
 </body>
 </html>
