@@ -12,8 +12,7 @@
     }
 
     header {
-      background-color: #00796b;
-      color: white;
+      background-color: #e0f7e9; /* 薄い緑 */
       padding: 20px;
     }
 
@@ -24,14 +23,15 @@
     }
 
     .header-content img {
-      width: 40px;
+      width: 60px; /* ロゴを少し大きく */
       height: auto;
       margin-right: 15px;
     }
 
     .header-content h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.8em; /* タイトルを少し大きく */
+      color: #004d40;    /* 濃い緑で視認性アップ */
     }
 
     h2 {
@@ -42,9 +42,17 @@
       padding: 40px 20px;
     }
 
-    .section-blue { background-color: #e0f7fa; }
-    .section-green { background-color: #f1f8e9; }
-    .section-yellow { background-color: #fff8e1; }
+    .section-blue {
+      background-color: #e0f7fa;
+    }
+
+    .section-green {
+      background-color: #f1f8e9;
+    }
+
+    .section-yellow {
+      background-color: #fff8e1;
+    }
 
     .row {
       display: flex;
@@ -56,7 +64,8 @@
       margin: 0 auto;
     }
 
-    .text-block, .image-block {
+    .text-block,
+    .image-block {
       flex: 1;
       min-width: 280px;
     }
@@ -121,7 +130,7 @@
 </head>
 <body>
 
-  <!-- ヘッダー部分 -->
+  <!-- ヘッダー -->
   <header>
     <div class="header-content">
       <img src="logo.png" alt="ロゴ">
@@ -145,7 +154,7 @@
     </div>
   </section>
 
-  <!-- セクション② -->
+  <!-- セクション②：トルコ人について -->
   <section class="section-green">
     <div class="row">
       <div class="text-block">
