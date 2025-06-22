@@ -11,27 +11,40 @@
       color: #333;
     }
 
-    h1 {
-      text-align: center;
-      padding-top: 40px;
-      color: #00796b;
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-content img {
+      width: 40px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    .header-content h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    h2 {
+      margin-top: 0;
     }
 
     section {
       padding: 40px 20px;
     }
 
-    .section-blue {
-      background-color: #e0f7fa;
-    }
-
-    .section-green {
-      background-color: #f1f8e9;
-    }
-
-    .section-yellow {
-      background-color: #fff8e1;
-    }
+    .section-blue { background-color: #e0f7fa; }
+    .section-green { background-color: #f1f8e9; }
+    .section-yellow { background-color: #fff8e1; }
 
     .row {
       display: flex;
@@ -43,12 +56,7 @@
       margin: 0 auto;
     }
 
-    .text-block {
-      flex: 1;
-      min-width: 280px;
-    }
-
-    .image-block {
+    .text-block, .image-block {
       flex: 1;
       min-width: 280px;
     }
@@ -100,11 +108,26 @@
       .row {
         flex-direction: column;
       }
+
+      .header-content {
+        flex-direction: column;
+      }
+
+      .header-content img {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>週刊日誌</h1>
+
+  <!-- ヘッダー部分 -->
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="ロゴ">
+      <h1>週間日誌</h1>
+    </div>
+  </header>
 
   <!-- セクション①：仕事 -->
   <section class="section-blue">
@@ -122,7 +145,7 @@
     </div>
   </section>
 
-  <!-- セクション②：トルコ人について -->
+  <!-- セクション② -->
   <section class="section-green">
     <div class="row">
       <div class="text-block">
@@ -133,8 +156,10 @@
         <p>このカードを使ってiPhoneを買いたいとのことでしたが，購入した際のメールが自分に届くように設定してくれと頼んできました．</p>
         <p>そもそもそんなことできないし，やばいので，ChatGPTに聞いてと言っておきました．</p>
       </div>
+    </div>
+  </section>
 
-
+  <!-- フッター -->
   <footer>
     <hr>
     <p>更新日：2025年6月23日</p>
